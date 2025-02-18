@@ -1,0 +1,37 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	&::before {
+		box-sizing: inherit;
+	}
+	&::after {
+		box-sizing: inherit;
+	}
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+:root {
+	--font-family: 'Nunito', 'Rubik', sans-serif;
+}
+body {
+	font-family: $font-family_1;
+}
+.page-container {
+	display: flex;
+	max-width: 1200px;
+	min-height: 738px;
+	margin: 0 auto;
+	position: relative;
+}

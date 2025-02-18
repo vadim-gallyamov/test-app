@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="sidebar">
+            <div class="sidebar__header">
+                <button class="burger-menu" id="burger-menu">
+                    <span class="burger-menu__line"></span>
+                    <span class="burger-menu__line"></span>
+                    <span class="burger-menu__line"></span>
+                </button>
+                <p class="sidebar__title" id="sidebar-text">ТЕСТЫ</p>
+            </div>
+            <ul class="sidebar__list" id="test-list">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" data-test="1">
+                        <svg class="sidebar__link-svg" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" />
+                        </svg>
+                        Тест 1
+                    </a> 
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" data-test="2">
+                        <svg class="sidebar__link-svg" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" />
+                        </svg>
+                        Тест 2
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" data-test="3">
+                        <svg class="sidebar__link-svg" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" />
+                        </svg>
+                        Тест 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="test-container" id="test-container">
+                <!-- Сообщение, если тест не выбран -->
+                <div class="test-message" id="select-test-message">
+                    Выберите тест из списка
+                </div>
+            </div>
+
+            <!-- Основной контейнер для описания теста и шапки -->
+            <div class="test-header" id="test-header">
+                <h2 class="test-header__title">Описание</h2>
+            </div>
+            <div class="test-content">
+                <p class="test-description__text" id="test-description-text"></p>
+
+                <div class="test-buttons" id="test-buttons">
+                    <button class="btn btn-start" id="start-test">Начать</button>
+                    <button class="btn btn-cancel" id="cancel-test">Отмена</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal" id="exitModal">
+        <div class="modal__window">
+            <p class="modal__title">Вы уверены, что хотите выйти?</p>
+            <p class="modal__text">Все результаты будут сброшены.</p>
+            <div class="modal__buttons">
+                <button class="btn btn-confirm-exit" id="confirmExit">Выход</button>
+                <button class="btn btn-modal-cancel" id="cancelExit">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <script defer type="module" src="/src/main.js"></script>
+</body>
+
+</html>
